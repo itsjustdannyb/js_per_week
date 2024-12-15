@@ -1,0 +1,79 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root {
+  --grid_color: #020202;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cell {
+  width: 75px;
+  height: 75px;
+  /* background-color: #var(--grid_color); */
+  margin: 5px;
+}
+.cell:hover {
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.r1c1 {
+  border-right: 2px solid var(--grid_color);
+  border-bottom: 2px solid var(--grid_color);
+}
+.r1c2 {
+  border-left: 2px solid var(--grid_color);
+  border-bottom: 2px solid var(--grid_color);
+  border-right: 2px solid var(--grid_color);
+}
+.r1c3 {
+  border-left: 2px solid var(--grid_color);
+  border-bottom: 2px solid var(--grid_color);
+}
+.r2c1 {
+  border-top: 2px solid var(--grid_color);
+  border-right: 2px solid var(--grid_color);
+  border-bottom: 2px solid var(--grid_color);
+}
+.r2c2 {
+  border-top: 2px solid var(--grid_color);
+  border-left: 2px solid var(--grid_color);
+  border-right: 2px solid var(--grid_color);
+  border-bottom: 2px solid var(--grid_color);
+}
+.r2c3 {
+  border-top: 2px solid var(--grid_color);
+  border-left: 2px solid var(--grid_color);
+  border-bottom: 2px solid var(--grid_color);
+}
+.r3c1 {
+  border-top: 2px solid var(--grid_color);
+  border-right: 2px solid var(--grid_color);
+}
+.r3c2 {
+  border-top: 2px solid var(--grid_color);
+  border-left: 2px solid var(--grid_color);
+  border-right: 2px solid var(--grid_color);
+}
+.r3c3 {
+  border-top: 2px solid var(--grid_color);
+  border-left: 2px solid var(--grid_color);
+}
