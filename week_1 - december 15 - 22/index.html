@@ -7,24 +7,34 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>tic tac toe</h1>
     <!-- put a 3 by 3 matrix at the center of the screen -->
     <div class="container">
-      <div class="row">
-        <div class="cell r1c1"></div>
-        <div class="cell r1c2"></div>
-        <div class="cell r1c3"></div>
+      <h1>tic tac toe</h1>
+      <p class="score">0</p>
+
+      <div class="hidden try-again-info">
+        <h3>you win!</h3>
+        <button class="try-again">try again</button>
       </div>
-      <div class="row">
-        <div class="cell r2c1"></div>
-        <div class="cell r2c2"></div>
-        <div class="cell r2c3"></div>
-      </div>
-      <div class="row">
-        <div class="cell r3c1"></div>
-        <div class="cell r3c2"></div>
-        <div class="cell r3c3"></div>
+
+      <div class="grid">
+        <div class="row">
+          <div class="cell r1c1"></div>
+          <div class="cell r1c2"></div>
+          <div class="cell r1c3"></div>
+        </div>
+        <div class="row">
+          <div class="cell r2c1"></div>
+          <div class="cell r2c2"></div>
+          <div class="cell r2c3"></div>
+        </div>
+        <div class="row">
+          <div class="cell r3c1"></div>
+          <div class="cell r3c2"></div>
+          <div class="cell r3c3"></div>
+        </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
