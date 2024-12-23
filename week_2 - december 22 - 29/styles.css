@@ -2,8 +2,16 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  color: #ffffff;
 }
 
+body {
+  background-color: #1a181b;
+}
+
+body:hover {
+  cursor: pointer;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -11,8 +19,41 @@
   justify-content: center;
   min-height: 100vh;
 }
+.counter {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
 
 p,
 h1 {
   text-align: center;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+img {
+  width: 406px;
+  height: 285px;
+}
+
+#joke {
+  width: 500px;
+}
+
+@media (max-width: 750px) {
+  img {
+    width: 231px;
+    height: 162px;
+  }
+
+  p,
+  h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 16px;
+  }
+  .counter {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
 }
