@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>what specie is my iris?</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="assistant-normal-txt">
+    <div class="container">
+      <h1>what specie is my iris?</h1>
+      <p class="prediction">
+        with just the measurements of you iris plant we can determine its specie
+        !!
+      </p>
+      <form action="/predict" method="post" id="form-entry">
+        <label for="sepal_length"> sepal length (cm)</label>
+        <input type="text" id="sepal_length" name="sepal_length" />
+        <label for="sepal_width"> sepal width (cm)</label>
+        <input type="text" id="sepal_width" name="sepal_width" />
+        <label for="petal_length"> petal length (cm)</label>
+        <input type="text" id="petal_length" name="petal_length" />
+        <label for="petal_width"> petal width (cm)</label>
+        <input type="text" id="petal_width" name="petal_width" />
+        <div>
+          <input type="submit" value="go!" class="submit-btn" />
+        </div>
+      </form>
+      <p class="copyright">&copy; bams!</p>
+
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
